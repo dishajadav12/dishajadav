@@ -45,7 +45,7 @@ export default function Home() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/images/bg.jpeg')`,
+          backgroundImage: `url('/images/bg.png')`,
         }}
       />
 
@@ -61,7 +61,7 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-end min-h-screen px-4 sm:px-6 lg:px-8 pb-6">
-        <div className="text-left space-y-1 max-w-4xl">
+        <div className="max-w-4xl w-full text-left lg:text-center space-y-1 lg:space-y-3">
           {/* Main Heading */}
           <div
             className={`transition-all duration-1000 ease-out ${
@@ -70,15 +70,13 @@ export default function Home() {
                 : "opacity-0 translate-y-8"
             }`}
           >
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-1">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-1 ">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Disha Jadav
               </span>
             </h1>
-
-            {/* Typewriter Effect */}
-            <div className="flex items-center ">
-              <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-light">
+            <div className="flex items-center justify-center w-full">
+              <p className="text-xl sm:text-2xl lg:text-3xl text-gray-200 font-light text-left lg:text-center w-full">
                 Software Developer | Designer
               </p>
             </div>
