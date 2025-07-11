@@ -43,12 +43,14 @@ export default function Home() {
     <div className="min-h-screen relative overflow-hidden">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat block lg:hidden"
         style={{
           backgroundImage: `url('/images/bg.png')`,
         }}
       />
-
+      <div className="hidden lg:block absolute inset-0">
+        <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500"></div>
+      </div>
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
@@ -70,7 +72,19 @@ export default function Home() {
                 : "opacity-0 translate-y-8"
             }`}
           >
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-1 ">
+            <div className="hidden lg:flex justify-center mb-6">
+              <div className="w-[208px] h-[208px] rounded-full p-[4px] bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 shadow-2xl">
+                <div
+                  className="w-[200px] h-[200px] rounded-full overflow-hidden bg-white"
+                  style={{
+                    backgroundImage: "url('/images/bg.png')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
+              </div>
+            </div>
+            <h1 className="text-4xl sm:text-4xl lg:text-4xl font-bold text-white mb-1 ">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Disha Jadav
               </span>
